@@ -1,0 +1,108 @@
+.cuerpo__proyectos___caja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5rem ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1.4);
+    transition: all .5s ease;
+}
+
+.cuerpo__proyectos___cajaImagen{
+    width: 50%;
+    
+}
+
+.cuerpo__proyectos___cajaDescripcion{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cuerpo__proyectos___imagen{
+    width: 100%;
+}
+
+.cuerpo__proyectos___subtitulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #FFFF; 
+    position: relative;
+}
+
+.cuerpo__proyectos___parrafo{
+    font-size: 1.4rem;
+    margin:2.5rem
+}
+
+.cuerpo__proyectos___cajaLink{
+    margin-top: .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #1f2633;
+}
+
+.cuerpo__proyectos___iconos{
+    width: 45px;
+    transition: all .1s ease;
+    
+/*Efecos*/
+
+}
+.cuerpo__proyectos___iconos:hover{
+    transition: all .1s ease;
+    background-color: #ffd164;
+    border-radius: 50%;
+}
+
+.cuerpo__proyectos___caja1:hover{
+    box-shadow: 0 10px 15px rgba(10, 15, 20, 1);
+    transform: rotate(2deg) scale(1.1);
+}
+
+.cuerpo__proyectos___caja2:hover{
+    box-shadow: 0 10px 15px rgba(10, 15, 20, 1);
+    transform: rotate(-2deg) scale(1.1);
+}
+
+.cuerpo__proyectos___subtitulo:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: .2rem;
+    background-color: #ffd164;
+    left:50%;
+    bottom: -.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.cuerpo__proyectos___caja:hover .cuerpo__proyectos___subtitulo::after{
+    cursor: pointer;
+    width:100%;
+    left: 0;
+}
+
+@media only screen and (max-width: 510px){
+    .cuerpo__proyectos___caja{
+        flex-direction: column;
+        width: 95%;
+    }
+    .cuerpo__proyectos___cajaImagen{
+        width: 95%;
+    }
+
+    .cuerpo__proyectos___cajaDescripcion{
+        width: 100%;
+    }
+
+    .cuerpo__proyectos___caja2{ 
+        flex-direction: column-reverse;
+
+    }
+}

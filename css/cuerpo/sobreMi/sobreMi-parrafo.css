@@ -1,0 +1,13 @@
+.cuerpo__sobreMi___parrafo{
+    width: 50%;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+}
+
+@media only screen and (max-width: 510px){
+    .cuerpo__sobreMi___parrafo{
+        width: 90%;
+    }
+}

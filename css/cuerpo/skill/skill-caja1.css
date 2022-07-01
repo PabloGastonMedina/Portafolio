@@ -1,0 +1,101 @@
+.cuerpo__skill___caja1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 7rem solid #1f2633;
+    border-top: 4rem solid #1f2633;
+}
+
+.cuerpo__skill___titulo{
+    font-size: 2.5rem;
+    width: 40%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.cuerpo__skill___cajaSkill{
+    display: flex;
+}
+
+.cuerpo__skill___figura{
+    width: 16rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .4rem solid #1f2633;
+    border-radius: 3rem;
+    transition: transform 1s linear;
+}
+
+.cuerpo__skill___figura:hover{
+    transition: transform .5s linear;
+    transform:translateX(1rem);
+    transform: rotate(5deg);
+    transform-origin: right right;
+    
+}
+
+.cuerpo__skill___imagen{
+    width: 5rem;
+    margin: .5rem;
+    transition: background .5s linear;
+    
+}
+
+.cuerpo__skill___imagen:hover{
+    background-color: #ffd164;
+    
+}
+
+.cuerpo__skill___subtitulo{
+    color: #FFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+}
+
+
+
+
+.cuerpo__skill___titulo::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: .2rem;
+    background-color: #ffd164;
+    left:50%;
+    bottom: -.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cuerpo__skill___caja1:hover .cuerpo__skill___titulo::after{
+    width:50%;
+    left: 25%;
+
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__skill___figura{
+        margin: 1rem;
+        width: 14rem;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .cuerpo__skill___cajaSkill{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .cuerpo__skill___figura{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}

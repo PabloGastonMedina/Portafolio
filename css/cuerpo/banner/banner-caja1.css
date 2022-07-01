@@ -1,0 +1,37 @@
+.cuerpo__banner___caja1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.cuerpo__baneer___titulo{
+    
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.cuerpo__banner___parrafo{
+    
+    width: 75%;
+    grid-area: parrafo;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    text-align: start;
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__banner___caja1{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .cuerpo__banner___parrafo{
+        text-align: center;
+    }
+}

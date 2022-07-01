@@ -1,0 +1,45 @@
+.cuerpo__skill___caja3{
+    width: 35%;
+   
+    border-radius: 1rem;
+}
+
+.cuerpo__skill___cajaHobbies{
+    display: grid;
+    grid-template-areas: 
+    "gym . boxeo"
+    ". jugar ."
+    "series . streams";
+}
+
+.gym{
+    grid-area: gym;
+}
+
+.boxeo{
+    grid-area: boxeo;
+}
+
+.jugar{
+    grid-area: jugar;
+}
+
+.series{
+    grid-area: series;
+}
+
+.streams{
+    grid-area: streams;
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__skill___caja3{
+     width: 100%;
+     
+    }
+    .cuerpo__skill___cajaHobbies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

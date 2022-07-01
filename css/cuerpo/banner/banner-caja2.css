@@ -1,0 +1,62 @@
+.cuerpo__banner___caja2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.cuerpo__banner___enlaces{
+    display: flex;
+}
+
+.cuerpo__banner___link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem 0.5rem;
+    transition: all .5s ease;
+    color: #FFFF;
+}
+
+.cuerpo__banner___foto{
+    width: 11rem;
+    border-radius: 300px;
+    z-index: 2;
+}
+
+.cuerpo__banner___social{
+    width:20px;
+}
+
+.cuerpo__banner___link:hover{
+    color: gold;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1024px){
+    .cuerpo__banner___link{
+        margin: 1rem 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .cuerpo__banner___foto{
+        width: 9rem;
+    }
+    .cuerpo__banner___enlaces{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuerpo__banner___link{
+        text-align: center;
+        width: 100%;
+        margin: .2rem;
+    }
+}

@@ -1,0 +1,15 @@
+.cuerpo__banner{
+    display: flex;
+    background-color: #1F2633;
+    height: 100vh;
+    transition: all 5s ease;
+    color: #FFFF;
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__banner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

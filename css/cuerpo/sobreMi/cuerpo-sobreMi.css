@@ -1,0 +1,24 @@
+.cuerpo__sobreMi{
+    background-color: #1f2633;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    color: #FFFF;
+    position: relative;
+    transition: 2s;
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__sobreMi{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .cuerpo__sobreMi{
+        flex-direction: column;
+        height: auto;
+    }
+}

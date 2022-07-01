@@ -1,0 +1,35 @@
+.cuerpo__proyectos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.cuerpo__proyectos___titulo{
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .1rem;
+    position: relative;
+}
+
+.cuerpo__proyectos___titulo:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: .2rem;
+    background-color: #ffd164;
+    left:50%;
+    bottom: -.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.cuerpo__proyectos:hover .cuerpo__proyectos___titulo::after{
+    cursor: pointer;
+    width:100%;
+    left: 0;
+}

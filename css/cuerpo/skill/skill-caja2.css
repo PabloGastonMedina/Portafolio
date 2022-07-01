@@ -1,0 +1,43 @@
+.cuerpo__skill___caja2{
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.cuerpo__skill___cajaSoftSkill{
+    display: grid;
+    grid-template-areas: 
+    "trabajo . responsable"
+    ". adaptabilidad ."
+    "actitud . autodidacta";
+}
+
+.trabajo{
+    grid-area: trabajo;
+}
+
+.responsable{
+    grid-area: responsable;
+}
+
+.adaptabilidad{
+    grid-area: adaptabilidad;
+}
+
+.actitud{
+    grid-area: actitud;
+}
+
+.autodidacta{
+    grid-area: autodidacta;
+}
+
+@media only screen and (max-width: 810px){
+    .cuerpo__skill___caja2{
+     width: 100%;
+    }
+    .cuerpo__skill___cajaSoftSkill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
